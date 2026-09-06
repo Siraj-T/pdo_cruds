@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+h2 {
+    margin: 0 0 6px 0;
+    color: #1a202c;
+    font-size: 24px;
+}
+
+.subtitle {
+    margin: 0;
+    color: #718096;
+    font-size: 14px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.query-box {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.query-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.query-box-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #2d3748;
+}
+
+.query-box-tag {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.query-desc {
+    margin: 0 0 12px 0;
+    font-size: 13px;
+    color: #718096;
+}
+
+.template-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-template {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e0;
+    color: #4a5568;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.15s ease;
+}
+
+.btn-template:hover {
+    background-color: #edf2f7;
+    color: #2d3748;
+    border-color: #a0aec0;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #0f172a;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.sql-textarea {
+    width: 100%;
+    padding: 14px;
+    font-family: "SFMono-Regular", Consolas, Monaco, "Liberation Mono", Menlo, monospace;
+    font-size: 14px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #0f172a;
+    resize: vertical;
+    outline: none;
+    line-height: 1.6;
+    transition: border-color 0.2s ease;
+}
+
+.sql-textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.alert {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.alert-success {
+    background-color: #c6f6d5;
+    color: #22543d;
+    border: 1px solid #9ae6b4;
+}
+
+.alert-error {
+    background-color: #fed7d7;
+    color: #742a2a;
+    border: 1px solid #feb2b2;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.styled-table th {
+    background-color: #2d3748;
+    color: #ffffff;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.styled-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: middle;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f7fafc;
+}
+
+.actions-cell {
+    white-space: nowrap !important;
+    text-align: center !important;
+}
+
+.action-btn {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none !important;
+    border-radius: 6px;
+    margin-right: 6px;
+    transition: all 0.2s ease-in-out;
+    line-height: 1.4;
+}
+
+.action-btn:last-child {
+    margin-right: 0;
+}
+
+.action-btn.edit-btn {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    border: 1px solid #bee3f8;
+}
+
+.action-btn.edit-btn:hover {
+    background-color: #3182ce;
+    color: #ffffff;
+    border-color: #3182ce;
+}
+
+.action-btn.delete-btn {
+    background-color: #fff5f5;
+    color: #c53030;
+    border: 1px solid #fed7d7;
+}
+
+.action-btn.delete-btn:hover {
+    background-color: #e53e3e;
+    color: #ffffff;
+    border-color: #e53e3e;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.badge-role {
+    background-color: #edf2f7;
+    color: #4a5568;
+}
+
+.badge-active {
+    background-color: #c6f6d5;
+    color: #22543d;
+}
+
+.badge-pending {
+    background-color: #feebc8;
+    color: #7b341e;
+}
+
+.badge-inactive {
+    background-color: #fed7d7;
+    color: #742a2a;
+}
+
+.btn {
+    display: inline-block;
+    padding: 9px 18px;
+    color: white;
+    text-decoration: none !important;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-green {
+    background-color: #38a169;
+}
+.btn-green:hover {
+    background-color: #2f855a;
+}
+
+.btn-blue {
+    background-color: #3182ce;
+}
+.btn-blue:hover {
+    background-color: #2b6cb0;
+}
+
+.btn-gray {
+    background-color: #718096;
+}
+.btn-gray:hover {
+    background-color: #4a5568;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #2d3748;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    max-width: 450px;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+}
+
+.card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #3182ce;
+    padding: 20px;
+    margin-bottom: 24px;
+    border-radius: 6px;
+}
+
+pre {
+    background: #1a202c;
+    color: #e2e8f0;
+    padding: 16px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 13px;
+    line-height: 1.5;
+}
