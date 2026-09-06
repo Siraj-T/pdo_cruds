@@ -26,7 +26,6 @@ The SQLite database and `users` table are created and seeded automatically on fi
 
 - `index.php`: Interactive web application with live CRUD UI and a real-time PHP PDO code runner.
 - `db.php`: SQLite PDO database connection and automatic table initialization.
-- `CRUD.php`: Standalone script demonstrating Create, Read, Update, and Delete in pure PHP.
 - `examples.php`: Visual reference guide explaining PDO query structure.
 - `style.css`: Clean, modern styling with CSS Grid and Flexbox.
 

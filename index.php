@@ -144,7 +144,6 @@ if ($customResults !== null) {
             <a href="examples.php" class="btn btn-gray" style="background:#0f172a; color:#38bdf8; border:1px solid #334155; text-decoration: none; font-weight: 600;">
                 📖 Full CRUD Examples Guide
             </a>
-            <a href="CRUD.php" target="_blank" class="btn btn-blue">Open Raw CRUD.php</a>
         </div>
     </div>
 
