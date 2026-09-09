@@ -42,15 +42,6 @@ http://localhost:8080
 
 ---
 
-## 🧪 Testing
-
-Run automated feature tests:
-```bash
-php artisan test
-```
-
----
-
 ## 📂 Project Structure
 
 ```
